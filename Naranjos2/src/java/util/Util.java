@@ -110,7 +110,7 @@ public class Util {
         Connection cn = null;
         String url = "jdbc:postgresql://localhost:5432/naranjos2";
         String user = "postgres";
-        String password = "N4r4nj0s*.";
+        String password = "test";
         try {
             Class.forName("org.postgresql.Driver");
             cn = DriverManager.getConnection(url, user, password);
@@ -265,7 +265,7 @@ public class Util {
                         "gerencia@recuperacionesnaranjo.com",
                         "auxiliarcontable@recuperacionesnaranjo.com",
                         "contabilidad@recuperacionesnaranjo.com"}; // Lista de destinatarios
-        String subject = "Notificación Urgente: Retanqueo de Caja Requerido "+caja;
+        String subject = "NotificaciÃ³n Urgente: Retanqueo de Caja Requerido "+caja;
         String text = "Estimado usuario se debe realizar un retanqueo de caja para: "+caja+ "\n Saldo actual: "+saldoCaja+ "\nBase Caja: "+baseCaja;
         String pass = "1pvmQix*";
 
@@ -283,7 +283,7 @@ public class Util {
                         "auxiliarcontable@recuperacionesnaranjo.com",
                         "auxiliar.proyectos@recuperacionesnaranjo.com",
                         "auditoriadesintegracion@recuperacionesnaranjo.com"};
-        String subject = "Notificación ingreso local orden ingreso: "+codigo_orden_ingreso;
+        String subject = "NotificaciÃ³n ingreso local orden ingreso: "+codigo_orden_ingreso;
         String text = "Estimado usuario se debe realizar un retanqueo de caja para: ";
         String pass = "1pvmQix*";
 
