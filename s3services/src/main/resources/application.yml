@@ -4,9 +4,9 @@ spring:
   application:
     name: s3-services/
   dataSource:
-    url: "jdbc:postgresql://3.132.57.72:5432/naranjos2"
+    url: "jdbc:postgresql://test:5432/naranjos2"
     username: "postgres"
-    password: "N4r4nj0s*."
+    password: "test"
     driver-class-name: org.postgresql.Driver
     hikari:
       connection-timeout: 80000
@@ -25,8 +25,8 @@ spring:
 cloud:
   aws:
     credentials:
-      access-key: AKIAXDX6W4JQDZVJNJPO
-      secret-key: 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
+      access-key: test
+      secret-key: test
     region: us-east-2
     bucket: recnar/mantenimiento
     url: "https://recnar.s3.us-east-2.amazonaws.com/"
