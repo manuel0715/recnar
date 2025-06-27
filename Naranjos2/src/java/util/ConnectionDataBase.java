@@ -124,7 +124,7 @@ public class ConnectionDataBase {
             Class.forName("org.postgresql.Driver");
             String dbURL = "jdbc:postgresql://localhost:5432/interdisenio";
             String user = "postgres";
-            String pass = "GiD2020*.";
+            String pass = "test";
             conn = DriverManager.getConnection(dbURL, user, pass);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ConnectionDataBase.class.getName()).log(Level.SEVERE, null, ex);
@@ -138,7 +138,7 @@ public class ConnectionDataBase {
         Connection cn = null;
         String url = "jdbc:postgresql://localhost:5432/interdisenio";
         String user = "postgres";
-        String password = "GiD2020*.";
+        String password = "test";
         try {
             Class.forName("org.postgresql.Driver");
             cn = DriverManager.getConnection(url, user, password);
